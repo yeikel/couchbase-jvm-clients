@@ -9,3 +9,11 @@ updates:
       - dependency-name: "io.netty:*"
       - dependency-name: "com.fasterxml.jackson.core:*"
       - dependency-name: "com.fasterxml.jackson.module:*"
+  - package-ecosystem: "maven"
+    directory: "/core-io-deps"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "io.netty:*"
+      - dependency-name: "com.fasterxml.jackson.core:*"
+      - dependency-name: "com.fasterxml.jackson.module:*"
