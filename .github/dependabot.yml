@@ -9,11 +9,12 @@ updates:
       - dependency-name: "io.netty:*"
       - dependency-name: "com.fasterxml.jackson.core:*"
       - dependency-name: "com.fasterxml.jackson.module:*"
-   ignore:
-    - dependency-name: "io.netty:*"
-      update-types:
-        major
-        minor
+    ignore:
+      # Allow only patch updates for Netty
+      - dependency-name: "io.netty:*"
+        update-types:
+          - major
+          - minor
   - package-ecosystem: "maven"
     directory: "/core-io-deps"
     schedule:
@@ -22,8 +23,9 @@ updates:
       - dependency-name: "io.netty:*"
       - dependency-name: "com.fasterxml.jackson.core:*"
       - dependency-name: "com.fasterxml.jackson.module:*"
-   ignore:
-    - dependency-name: "io.netty:*"
-      update-types:
-        major
-        minor
+    ignore:
+      # Allow only patch updates for Netty
+      - dependency-name: "io.netty:*"
+        update-types:
+          - major
+          - minor
