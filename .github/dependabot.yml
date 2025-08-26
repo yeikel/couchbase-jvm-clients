@@ -13,8 +13,8 @@ updates:
       # Allow only patch updates for Netty
       - dependency-name: "io.netty:*"
         update-types:
-          - major
-          - minor
+          - version-update:semver-major
+          - version-update:semver-minor
   - package-ecosystem: "maven"
     directory: "/core-io-deps"
     schedule:
@@ -27,5 +27,5 @@ updates:
       # Allow only patch updates for Netty
       - dependency-name: "io.netty:*"
         update-types:
-          - major
-          - minor
+          - version-update:semver-major
+          - version-update:semver-minor
