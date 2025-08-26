@@ -12,8 +12,8 @@ updates:
    ignore:
     - dependency-name: "io.netty:*"
       update-types:
-       - major
-       - minor
+        major
+        minor
   - package-ecosystem: "maven"
     directory: "/core-io-deps"
     schedule:
@@ -25,5 +25,5 @@ updates:
    ignore:
     - dependency-name: "io.netty:*"
       update-types:
-       - major
-       - minor
+        major
+        minor
